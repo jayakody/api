@@ -1,88 +1,76 @@
-# API Repository
+# Base
 
-One Stop shop for all-things-code at BSN
+Knowledge base template for Jekyll. Browse through a [live demo](https://orange-ape.cloudvent.net/).
 
-## Getting Started
+![Base template screenshot](images/_screenshot.png)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Base was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
-### Prerequisites
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-What things you need to install the software and how to install them
+## Features
 
-```
-Give examples
-```
+* Tutorials organised by category
+* Two types of tutorials - text and video
+* Ability to have a "tutorial series"
+* FAQ section
+* Disqus comments
+* Sticky sidebar for main headings in tutorials
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* RSS/Atom feed
+* SEO tags
+* Google Analytics
 
-### Installing
+## Setup
 
-A step by step series of examples that tell you how to get a development env running
+1. Add your site and author details in `_config.yml`.
+2. Add your Google Analytics, Disqus and MailChimp keys to `_config.yml`.
+3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-Say what the step will be
+## Develop
 
-```
-Give the example
-```
+Base was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
 
-And repeat
+Install the dependencies with [Bundler](http://bundler.io/):
 
-```
-until finished
-```
+~~~bash
+$ bundle install
+~~~
 
-End with an example of getting some data out of the system or using it for a little demo
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-## Running the tests
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-Explain how to run the automated tests for this system
+## Editing
 
-### Break down into end to end tests
+Base is already optimised for adding, updating and removing tutorials, navigation, footer and FAQ information in CloudCannon.
 
-Explain what these tests test and why
+The sticky sidebar in tutorials in populated by pulling out `<h2>` elements from the content.
 
-```
-Give an example
-```
+### Posts
 
-### And coding style tests
+* Add, update or remove a post in the *Posts* collection.
+* The tutorials page is organised by categories.
+* Change the defaults when new posts are created in `_posts/_defaults.md`.
 
-Explain what these tests test and why
+### Post Series
+To create a new series:
 
-```
-Give an example
-```
+* Add a new document to the `sets` collection.
+* Set the `title` and `description`.
 
-## Deployment
+To add a tutorial/post to a series:
+* Add a `set` field to the tutorial front matter which points to the file name of the desired set without the `.md` extention. e.g. If I have a set at `_sets/getting-started.md` I would use this in my tutorial front matter: `set: getting-started`.
+* Add a `set_order` field to the tutorial front matter and specify a number. This is the tutorials order in the set.
 
-Add additional notes about how to deploy this on a live system
+### Navigation
 
-## Built With
+* Exposed as a data file to give clients better access.
+* Set in the *Data* / *Navigation* section.
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+### Footer
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* Exposed as a data file to give clients better access.
+* Set in the *Data* / *Footer* section.
