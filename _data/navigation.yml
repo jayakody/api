@@ -1,6 +1,10 @@
-- name: Tutorials
+- name: Home
   link: /
 - name: Videos
   link: /videos/
 - name: FAQ
   link: /faq/
+- name: Python
+  link: /python
+- name: Ansible
+  link: /big-ansible
