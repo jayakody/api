@@ -1,0 +1,15 @@
+---
+- hosts: '{{ hosts }}'
+  connection: local
+  gather_facts: no
+  any_errors_fatal: true
+
+
+  tasks:
+
+    - name: Remove WAF service instance from chain
+      bmf_rest_bigchain_remove_service_instance:
+        node: '{{ inventory_hostname }}'
+        chain: MainChain
+        service: WAF
+        service_instance: 1

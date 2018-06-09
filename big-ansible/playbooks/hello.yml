@@ -1,0 +1,8 @@
+---
+- hosts: qa-servers
+
+  tasks:
+    - name: Hello, <person>
+      hello:
+        name: "{{ inventory_hostname }}"
+

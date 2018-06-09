@@ -1,0 +1,59 @@
+---
+- hosts: '{{ hosts }}'
+  connection: local
+  gather_facts: no
+  any_errors_fatal: true
+
+  tasks:
+    - name: Create chain MainChain
+      bmf_rest_bigchain_create_chain:
+        node: '{{ inventory_hostname }}'
+        user: '{{ user }}'
+        password: '{{ password }}'
+        name: MainChain
+        switch: '{{ hostvars[inventory_hostname]["primary_switch_dpid"] }}'
+        endpoint1: ethernet11
+        endpoint2: ethernet17
+
+    - name: Create service WAF servicing all traffic and allowing addition of custom rules
+      bmf_rest_bigchain_create_service:
+        node: '{{ inventory_hostname }}'
+        user: '{{ user }}'
+        password: '{{ password }}'
+        name: WAF
+        action: bypass-service  # from {do-service, bypass-service, drop} applies to custom rules
+
+    - name: Add WAF service instance
+      bmf_rest_bigchain_add_service_instance:
+        node: '{{ inventory_hostname }}'
+        user: '{{ user }}'
+        password: '{{ password }}'
+        name: WAF
+        instance_id: 1
+        switch: '{{ hostvars[inventory_hostname]["primary_switch_dpid"] }}'
+        input: ethernet20
+        output: ethernet21
+
+    - name: Insert WAF service instance in chain
+      bmf_rest_bigchain_insert_service_instance:
+        node: '{{ inventory_hostname }}'
+        user: '{{ user }}'
+        password: '{{ password }}'
+        chain: MainChain
+        service: WAF
+        service_instance: 1
+        sequence: 1
+
+    - name: Add custom service filter rule
+      bmf_rest_bigchain_add_service_filter_rule:
+        node: '{{ inventory_hostname }}'
+        user: '{{ user }}'
+        password: '{{ password }}'
+        name: WAF
+        ip_proto: 6
+        src_ip: 10.10.25.36
+        src_ip_mask: 255.255.255.255
+        dst_ip: 56.38.123.23
+        dst_ip_mask: 255.255.255.255
+        src_port: 42365
+        dst_port: 80

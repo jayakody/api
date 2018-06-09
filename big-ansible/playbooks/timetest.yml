@@ -1,0 +1,7 @@
+---
+- hosts: qa-servers
+
+  tasks:
+    - name: Run timetest module
+      timetest: {}
+

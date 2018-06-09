@@ -1,0 +1,19 @@
+---
+- hosts: '{{ hosts }}'
+  connection: local
+  gather_facts: no
+  any_errors_fatal: true
+
+  tasks:
+
+    - name: Delete custom service filter rule
+      bmf_rest_bigchain_delete_service_filter_rule:
+        node: '{{ inventory_hostname }}'
+        name: WAF
+        ip_proto: 6
+        src_ip: 10.10.25.36
+        src_ip_mask: 255.255.255.255
+        dst_ip: 56.38.123.23
+        dst_ip_mask: 255.255.255.255
+        src_port: 42365
+        dst_port: 80

@@ -1,0 +1,7 @@
+---
+- hosts: qa-servers
+
+  tasks:
+    - name: Show system uptime
+      command: uptime
+

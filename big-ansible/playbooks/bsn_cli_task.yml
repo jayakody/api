@@ -1,0 +1,9 @@
+---
+- hosts: cont15
+  connection: local
+  gather_facts: no
+  tasks:
+    - name: Show version
+      bsn_cli_show_version:
+          node={{ inventory_hostname }} 
+

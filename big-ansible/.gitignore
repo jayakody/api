@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+*.swp
+*.retry
+*.pyc
+log/ansible.log
+.pydevproject
+.project
+.cache
