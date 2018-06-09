@@ -1,6 +1,6 @@
 # API Repository
 
-One Stop shop for all-things-code
+One Stop shop for all-things-code at BSN
 
 ## Getting Started
 
