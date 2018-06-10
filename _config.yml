@@ -1,16 +1,16 @@
 # ----
 # Site
 
-title: Base
-url: "https://orange-ape.cloudvent.net/"
+title: Code
+url: "https://labs.bigswitch.com/"
 baseurl:
 google_analytics_key:
 disqus_shortname:
 newsletter_action:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Knowledge base template for Jekyll.
+logo: /BSNLogo1.png
+description: Network Automation for Big Switch
 author:
   name:
   email:
