@@ -9,7 +9,7 @@ type: Document
 
 ## Introduction
 
-This example walk you through the basics of automation using Ansible in Big Cloud Fabric.
+This example walks you through the basics of automation using Ansible in Big Cloud Fabric.
 
 ## Step 1: Login to the Fabric
 
