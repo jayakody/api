@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+  ansible:
+    image: amelon1/big-ansible:latest
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/admin/tools
+      - TERM=vt100
+    volumes:
+      - ${PWD}/ansible:/etc/ansible
+      - ${PWD}/tools:/home/admin/tools
+      - ${PWD}/log:/home/admin/log
+      - ${PWD}/playbooks:/home/admin/playbooks
+      - ${PWD}/modules:/home/admin/modules
+    entrypoint:
+      - /code/entrypoint_loop.sh
