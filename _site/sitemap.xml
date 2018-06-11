@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://172.16.153.128:8080/python/network-as-code/</loc>
+<loc>http://172.16.153.128:8080/use%20cases/network-as-code/</loc>
+<lastmod>2017-01-15T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://172.16.153.128:8080/use%20cases/service-chaining/</loc>
 <lastmod>2017-01-15T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>http://172.16.153.128:8080/ansible/Ansible-getting-started/</loc>
+<lastmod>2018-06-01T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://172.16.153.128:8080/python/python-basic-examples/</loc>
+<lastmod>2018-06-01T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://172.16.153.128:8080/python/python-copyMemberRules/</loc>
 <lastmod>2018-06-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -121,9 +133,12 @@
 <loc>http://172.16.153.128:8080/videos/</loc>
 </url>
 <url>
-<loc>http://172.16.153.128:8080/category/python/</loc>
+<loc>http://172.16.153.128:8080/category/use-cases/</loc>
 </url>
 <url>
 <loc>http://172.16.153.128:8080/category/ansible/</loc>
+</url>
+<url>
+<loc>http://172.16.153.128:8080/category/python/</loc>
 </url>
 </urlset>
