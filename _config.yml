@@ -9,8 +9,8 @@ disqus_shortname:
 newsletter_action:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /BSNLogo1.png
-description: Network Automation for Big Switch
+logo: /siteicon.png
+description: Network Automation for Big Switch Products
 author:
   name:
   email:

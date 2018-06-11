@@ -1,9 +1,9 @@
 ---
-date: 2017-01-16
-title: Add a credit card
+date: 2018-06-01
+title: Getting Started with Python
 categories:
-  - billing
-description: "Add a credit card to your account"
+  - Python
+description: "Getting Started with Python"
 type: Document
 ---
 
