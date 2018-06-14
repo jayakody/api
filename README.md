@@ -18,8 +18,8 @@ Automation examples repository for Big Switch
 
 ## Develop
 
-###Develop with Python ([Pyhon](https://jayakody.github.io/api/category/2-python/))
-###Develop with Ansible ([Ansible](https://jayakody.github.io/api/big-ansible/))
+### Develop with Python ([Pyhon](https://jayakody.github.io/api/category/2-python/))
+### Develop with Ansible ([Ansible](https://jayakody.github.io/api/big-ansible/))
 
 
 ~~~bash
