@@ -2,7 +2,7 @@
 
 Automation example repository for Big Switch
 
-![Base template screenshot](https://www.bigswitch.com/sites/default/files/automationimage.jpeg)
+![screenshot](https://www.bigswitch.com/sites/default/files/automationimage.jpeg)
 
 
 ## Features
