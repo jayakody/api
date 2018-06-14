@@ -1,37 +1,26 @@
-# Base
+# Code.BigSwitch.com
 
-Knowledge base template for Jekyll. Browse through a [live demo](https://orange-ape.cloudvent.net/).
+Automation example repository for Big Switch
 
-![Base template screenshot](images/_screenshot.png)
+![Base template screenshot](https://www.bigswitch.com/sites/default/files/automationimage.jpeg)
 
-Base was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
 ## Features
 
-* Tutorials organised by category
-* Two types of tutorials - text and video
-* Ability to have a "tutorial series"
-* FAQ section
-* Disqus comments
-* Sticky sidebar for main headings in tutorials
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+* Getting started guides on how to setup Python/Ansible
+* Python Code Examples
+* Ansible Examples
+* Advanced Use cases.
 
 ## Setup
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics, Disqus and MailChimp keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+1. Refer to ([Setup](https://jayakody.github.io/api/category/1-getting-started/)
 
 ## Develop
 
-Base was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+Develop with Python ([Pyhon](https://jayakody.github.io/api/category/2-python/)
+Develop with Ansible ([Ansible](https://jayakody.github.io/api/big-ansible/)
 
-Install the dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
 $ bundle install

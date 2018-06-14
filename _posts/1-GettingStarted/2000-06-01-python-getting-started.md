@@ -35,4 +35,3 @@ pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 ~ $ sudo easy_install pip
 ~~~
 
-

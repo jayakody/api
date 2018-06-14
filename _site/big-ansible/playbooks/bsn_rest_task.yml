@@ -37,7 +37,9 @@
 			<div class="wrapper">
 				<section class="top-bar">
 					<div class="logo"><a href="/"><html>
+<a href="https://jayakody.github.io/api/">
  <img src="https://raw.githubusercontent.com/jayakody/api/master/images/bsnlogo.png" />
+</a>
 </html>
 </a></div>
 					<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
@@ -47,7 +49,7 @@
 	
 
 		
-		<a href="/api" class="">Home</a>
+		<a href="/" class="">Home</a>
 	
 	
 
