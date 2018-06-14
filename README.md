@@ -1,6 +1,6 @@
 # Code.BigSwitch.com
 
-Automation example repository for Big Switch
+Automation examples repository for Big Switch
 
 ![screenshot](https://www.bigswitch.com/sites/default/files/automationimage.jpeg)
 
@@ -14,12 +14,12 @@ Automation example repository for Big Switch
 
 ## Setup
 
-1. Refer to ([Setup](https://jayakody.github.io/api/category/1-getting-started/)
+1. Refer to ([Setup](https://jayakody.github.io/api/category/1-getting-started/))
 
 ## Develop
 
-Develop with Python ([Pyhon](https://jayakody.github.io/api/category/2-python/)
-Develop with Ansible ([Ansible](https://jayakody.github.io/api/big-ansible/)
+###Develop with Python ([Pyhon](https://jayakody.github.io/api/category/2-python/))
+###Develop with Ansible ([Ansible](https://jayakody.github.io/api/big-ansible/))
 
 
 ~~~bash
